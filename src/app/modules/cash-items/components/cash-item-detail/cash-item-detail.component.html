@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" class="detail">  
+        <mat-toolbar-row class="double">
+                <mat-icon (click)="closeDetailView()">close</mat-icon>
+                <mat-icon (click)="closeDetailView()">share</mat-icon>
+        </mat-toolbar-row>
+      
+        <mat-toolbar-row>
+                <span *ngIf="cashItem"> {{ cashItem.title }} </span>
+        </mat-toolbar-row>
+</mat-toolbar>

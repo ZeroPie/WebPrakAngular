@@ -1,0 +1,61 @@
+[{
+  "id": 1,
+  "title": "Turtur chalcospilos",
+  "value": 11
+}, {
+  "id": 2,
+  "title": "Picoides pubescens",
+  "value": 14
+}, {
+  "id": 3,
+  "title": "Diomedea irrorata",
+  "value": 74
+}, {
+  "id": 4,
+  "title": "Columba livia",
+  "value": 18
+}, {
+  "id": 5,
+  "title": "Ictonyx striatus",
+  "value": 67
+}, {
+  "id": 6,
+  "title": "Larus dominicanus",
+  "value": 73
+}, {
+  "id": 7,
+  "title": "Smithopsis crassicaudata",
+  "value": 62
+}, {
+  "id": 8,
+  "title": "Canis mesomelas",
+  "value": 97
+}, {
+  "id": 9,
+  "title": "Paroaria gularis",
+  "value": 25
+}, {
+  "id": 10,
+  "title": "Eudyptula minor",
+  "value": 31
+}, {
+  "id": 11,
+  "title": "Otaria flavescens",
+  "value": 31
+}, {
+  "id": 12,
+  "title": "Alopex lagopus",
+  "value": 42
+}, {
+  "id": 13,
+  "title": "Macropus fuliginosus",
+  "value": 89
+}, {
+  "id": 14,
+  "title": "Ciconia episcopus",
+  "value": 43
+}, {
+  "id": 15,
+  "title": "Uraeginthus angolensis",
+  "value": 2
+}]

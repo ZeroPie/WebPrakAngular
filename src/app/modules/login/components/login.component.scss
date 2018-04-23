@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .login-Button {
+    background: $primary-color;
+    color: white;
+  }

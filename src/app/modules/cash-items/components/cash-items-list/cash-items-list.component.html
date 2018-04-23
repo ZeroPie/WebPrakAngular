@@ -1,0 +1,12 @@
+<mat-list>
+    <h3 mat-subheader>Cash Item</h3>
+    <mat-list-item 
+        *ngFor="let cashItem of cashItemList" 
+        [routerLink]="['cashItem',{id:cashItem.id}]"
+    >
+            <mat-icon mat-list-icon>payment</mat-icon>
+            <h4 matLine> {{ cashItem.title }} </h4>
+            <p matLine> {{ cashItem.value | date }}  </p>
+       
+    </mat-list-item>
+</mat-list>
