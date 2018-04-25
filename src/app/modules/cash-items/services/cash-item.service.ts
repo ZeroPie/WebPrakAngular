@@ -1,18 +1,29 @@
 import { Injectable, Input } from "@angular/core";
 import { Http } from "@angular/http";
-import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/map';
 import { CashItem } from "../../../model/cashItem";
+import { Observable } from "rxjs/Rx";
+import { of } from "rxjs/observable/of";
 
 
 @Injectable()
 export class CashItemService {
-    @Input() itemsUrl: string = './assets/mockitems.json';
+
+    itemsUrl: string = './assets/mockitems.json';
     cashItemList: CashItem[] = [];
  
-    constructor(private http: Http) {}
+    constructor(private http: Http) {
+    }
 
     getItemsAsJson() {
         return this.http.get(this.itemsUrl).map(res => res.json());
+    }
+
+    // Fetch all existing comments
+    getObservableCashItems() : Observable<CashItem[]> {
+        return this.http.get(this.itemsUrl)
+                        .map(res => res.json())
+                        .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
     }
 
     getCashItemList(): CashItem[] {
@@ -26,6 +37,10 @@ export class CashItemService {
 
     getCashItemById(id: number): CashItem {
         return this.cashItemList.find( CashItem => CashItem.id === id)
+    }
+
+    getCashItemObservaleById(id: number): Observable<CashItem> {
+        return of(this.cashItemList.find( CashItem => CashItem.id === id));
     }
 
 }
