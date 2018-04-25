@@ -15,15 +15,15 @@ export class NavigationService {
       icon: 'photo_camera'
     },
     {
-      label: 'Login', 
-      path: 'login',
-      icon: 'lock_open'
-    },
-    {
       label: 'Warenkorb',
       path: 'warenkorb',
       icon: 'shopping_cart'
-    }
+    },
+    {
+      label: 'Login', 
+      path: 'login',
+      icon: 'perm_identity'
+    },
   ]
   getNavigationLinks (): NavigationLink[] {
     let navigationLinks: NavigationLink[] = [];
