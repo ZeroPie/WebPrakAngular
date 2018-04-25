@@ -5,19 +5,24 @@ import { NavigationLink } from "../../../model/navigationLink";
 export class NavigationService {
   links = [
     {
-      label: 'Dashboard', 
-      path: 'dashboard',
+      label: 'Home',
+      path: 'home',
       icon: 'home'
     },
     {
-      label: 'Items', 
+      label: 'Equipment', 
       path: 'items',
-      icon: 'format_list_bulleted'
+      icon: 'photo_camera'
     },
     {
       label: 'Login', 
       path: 'login',
-      icon: 'wc'
+      icon: 'lock_open'
+    },
+    {
+      label: 'Warenkorb',
+      path: 'warenkorb',
+      icon: 'shopping_cart'
     }
   ]
   getNavigationLinks (): NavigationLink[] {

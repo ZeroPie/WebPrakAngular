@@ -11,6 +11,7 @@ import { RootComponent } from './components/_root/root.component';
 import { RootRoutingModule } from './root-routing.module';
 import { MatTabsModule, MatIconModule } from '@angular/material';
 import { NavigationService } from './services/navigation.service';
+import { WarenkorbModule } from '../warenkorb/warenkorb.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NavigationService } from './services/navigation.service';
     HomeModule,
     LoginModule,
     RegistrationModule,
+    WarenkorbModule,
     RootRoutingModule,
     MatTabsModule,
     MatIconModule
